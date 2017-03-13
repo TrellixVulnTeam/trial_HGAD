@@ -34,7 +34,8 @@
 #if !UCONFIG_NO_COLLATION
 
 #include <mutex>
-#include <unicode/ucol.h>
+#include "/home/c/Downloads/icu/source/i18n/unicode/ucol.h"
+//#include <unicode/ucol.h>
 #include <wtf/Lock.h>
 #include <wtf/StringExtras.h>
 #include <wtf/text/StringView.h>

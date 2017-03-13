@@ -26,7 +26,8 @@
 #ifndef CharacterNames_h
 #define CharacterNames_h
 
-#include <unicode/utypes.h>
+//#include <unicode/utypes.h>
+#include "/home/c/Downloads/icu/source/common/unicode/utypes.h"
 
 namespace WTF {
 namespace Unicode {

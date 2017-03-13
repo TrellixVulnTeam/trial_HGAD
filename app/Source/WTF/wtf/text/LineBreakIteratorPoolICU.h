@@ -26,7 +26,8 @@
 #pragma once
 
 #include "TextBreakIterator.h"
-#include <unicode/uloc.h>
+//#include <unicode/uloc.h>
+#include "/home/c/Downloads/icu/source/common/unicode/uloc.h"
 #include <wtf/HashMap.h>
 #include <wtf/NeverDestroyed.h>
 #include <wtf/ThreadSpecific.h>

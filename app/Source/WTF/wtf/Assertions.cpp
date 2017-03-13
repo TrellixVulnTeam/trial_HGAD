@@ -47,6 +47,10 @@
 #include <wtf/text/StringBuilder.h>
 #include <wtf/text/WTFString.h>
 
+#include "/home/c/Android/Sdk/ndk-bundle/platforms/android-24/arch-arm/usr/include/dlfcn.h"
+
+#include "/home/c/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include/cxxabi.h"
+
 #if HAVE(SIGNAL_H)
 #include <signal.h>
 #endif

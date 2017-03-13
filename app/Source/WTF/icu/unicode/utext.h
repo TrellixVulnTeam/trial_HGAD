@@ -134,14 +134,20 @@
  */
 
 
+#include "/home/c/Downloads/icu/source/common/unicode/utypes.h"
+ #include "/home/c/Downloads/icu/source/common/unicode/uchar.h"
 
-#include "unicode/utypes.h"
-#include "unicode/uchar.h"
+//#include "unicode/utypes.h"
+//#include "unicode/uchar.h"
 #if U_SHOW_CPLUSPLUS_API
-#include "unicode/localpointer.h"
-#include "unicode/rep.h"
-#include "unicode/unistr.h"
-#include "unicode/chariter.h"
+ #include "/home/c/Downloads/icu/source/common/unicode/localpointer.h"
+ #include "/home/c/Downloads/icu/source/common/unicode/rep.h"
+ #include "/home/c/Downloads/icu/source/common/unicode/unistr.h"
+ #include "/home/c/Downloads/icu/source/common/unicode/chariter.h"
+//#include "unicode/localpointer.h"
+//#include "unicode/rep.h"
+//#include "unicode/unistr.h"
+//#include "unicode/chariter.h"
 #endif
 
 

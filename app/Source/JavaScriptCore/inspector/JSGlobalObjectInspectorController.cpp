@@ -52,7 +52,7 @@
 #if OS(DARWIN) || (OS(LINUX) && !PLATFORM(GTK))
 #include <cxxabi.h>
 #include <dlfcn.h>
-#include <execinfo.h>
+//#include <execinfo.h>
 #endif
 
 #if ENABLE(REMOTE_INSPECTOR)

@@ -26,7 +26,8 @@
 #ifndef UTextProviderUTF16_h
 #define UTextProviderUTF16_h
 
-#include <unicode/utext.h>
+//#include <unicode/utext.h>
+#include "/home/c/AndroidStudioProjects/MyApplication/app/Source/WTF/icu/unicode/utext.h"
 
 namespace WTF {
 

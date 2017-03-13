@@ -24,8 +24,12 @@
 #define StringImpl_h
 
 #include <limits.h>
-#include <unicode/uchar.h>
-#include <unicode/ustring.h>
+
+//#include <unicode/uchar.h>
+#include "/home/c/Downloads/icu/source/common/unicode/uchar.h"
+//#include "/home/c/Downloads/icu/source/common/uchar.c"
+//#include <unicode/ustring.h>
+#include "/home/c/Downloads/icu/source/common/unicode/ustring.h"
 #include <wtf/ASCIICType.h>
 #include <wtf/Forward.h>
 #include <wtf/Hasher.h>

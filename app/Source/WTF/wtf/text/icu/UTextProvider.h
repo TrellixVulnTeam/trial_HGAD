@@ -26,7 +26,13 @@
 #ifndef UTextProvider_h
 #define UTextProvider_h
 
-#include <unicode/utext.h>
+//#include "/home/c/AndroidStudioProjects/MyApplication/app/Source/WTF/icu/unicode/utext.h"
+//#include "/usr/include/x86_64-linux-gnu/unicode/utext.h"
+//home/c/AndroidStudioProjects/MyApplication/app/Source/WTF/icu/
+
+//#include "unicode/utext.h"
+
+#include "/home/c/Downloads/icu/source/common/unicode/utext.h"
 
 namespace WTF {
 

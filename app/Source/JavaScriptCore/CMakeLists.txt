@@ -2,6 +2,14 @@ cmake_minimum_required(VERSION 2.8.12)
 include(WebKitCommon)
 set_property(DIRECTORY . PROPERTY FOLDER "JavaScriptCore")
 
+#find_library(ICUIL18N Static /home/c/Music/build_icu_android/icu_build/lib/libicui18n.a)
+
+#find_library(LIBICUDATA Static /home/c/Music/build_icu_android/icu_build/lib/libicudata.a)
+#find_library(LIBICUUC Static   /home/c/Music/build_icu_android/icu_build/lib/libicuuc.a)
+
+include_directories(/home/c/Downloads/icu/source/common/)
+
+
 set(JavaScriptCore_INCLUDE_DIRECTORIES
     "${CMAKE_BINARY_DIR}"
     "${JAVASCRIPTCORE_DIR}"
@@ -43,11 +51,14 @@ set(JavaScriptCore_INCLUDE_DIRECTORIES
     "${DERIVED_SOURCES_JAVASCRIPTCORE_DIR}/inspector"
 )
 
-set(JavaScriptCore_SYSTEM_INCLUDE_DIRECTORIES
-    "${ICU_INCLUDE_DIRS}"
-)
+#set(JavaScriptCore_SYSTEM_INCLUDE_DIRECTORIES
+#    "${ICU_INCLUDE_DIRS}"
+#)
 
 set(JavaScriptCore_SOURCES
+
+
+
     API/JSBase.cpp
     API/JSCTestRunnerUtils.cpp
     API/JSCallbackConstructor.cpp
@@ -1032,11 +1043,14 @@ set(JavaScriptCore_OBJECT_LUT_SOURCES
     wasm/js/WebAssemblyRuntimeErrorPrototype.cpp
     wasm/js/WebAssemblyTableConstructor.cpp
     wasm/js/WebAssemblyTablePrototype.cpp
+
+
+
 )
 
 set(JavaScriptCore_LIBRARIES
     WTF${DEBUG_SUFFIX}
-    ${ICU_I18N_LIBRARIES}
+  #  ${ICU_I18N_LIBRARIES}
     ${LLVM_LIBRARIES}
 )
 
@@ -1512,7 +1526,7 @@ WEBKIT_INCLUDE_CONFIG_FILES_IF_EXISTS()
 
 WEBKIT_CREATE_FORWARDING_HEADERS(JavaScriptCore DIRECTORIES ${JavaScriptCore_FORWARDING_HEADERS_DIRECTORIES} FILES ${JavaScriptCore_FORWARDING_HEADERS_FILES})
 
-target_include_directories(LLIntOffsetsExtractor PRIVATE ${JavaScriptCore_INCLUDE_DIRECTORIES})
+target_include_directories(LLIntOffsetsExtractor PRIVATE ${JavaScriptCore_INCLUDE_DIRECTORIES}  /home/c/Downloads/icu/source/common/  /home/c/Downloads/icu/source/i18n)
 
 add_subdirectory(shell)
 

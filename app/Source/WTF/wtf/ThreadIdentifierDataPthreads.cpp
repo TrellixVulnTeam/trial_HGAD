@@ -42,7 +42,8 @@
 #else
 #include <limits.h>
 #endif
-
+#include "/home/c/Android/Sdk/ndk-bundle/platforms/android-24/arch-arm/usr/include/sys/limits.h"
+#define PTHREAD_KEYS_MAX 1024
 namespace WTF {
 
 pthread_key_t ThreadIdentifierData::m_key = PTHREAD_KEYS_MAX;

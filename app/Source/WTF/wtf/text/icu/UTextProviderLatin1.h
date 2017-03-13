@@ -26,7 +26,9 @@
 #ifndef UTextProviderLatin1_h
 #define UTextProviderLatin1_h
 
-#include <unicode/utext.h>
+//#include <unicode/utext.h>
+
+#include "/home/c/AndroidStudioProjects/MyApplication/app/Source/WTF/icu/unicode/utext.h"
 #include <wtf/text/LChar.h>
 
 namespace WTF {

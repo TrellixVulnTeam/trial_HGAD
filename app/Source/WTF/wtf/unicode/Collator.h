@@ -29,7 +29,9 @@
 #ifndef WTF_Collator_h
 #define WTF_Collator_h
 
-#include <unicode/uconfig.h>
+
+#include "/home/c/Downloads/icu/source/common/unicode/uconfig.h"
+//#include <unicode/uconfig.h>
 #include <wtf/Noncopyable.h>
 
 struct UCharIterator;

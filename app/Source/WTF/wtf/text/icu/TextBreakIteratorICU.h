@@ -20,9 +20,14 @@
 
 #pragma once
 
-#include <unicode/ubrk.h>
+#include "/home/c/AndroidStudioProjects/MyApplication/app/Source/WTF/icu/unicode/ubrk.h"
+#include "/usr/include/x86_64-linux-gnu/unicode/ubrk.h"
+#include "/usr/include/x86_64-linux-gnu/unicode/utext.h"
+#include "UTextProviderLatin1.h"
+//#include <unicode/ubrk.h>
+//#include "ubrk.h"
 #include <wtf/Optional.h>
-#include <wtf/text/icu/UTextProviderLatin1.h>
+//#include <wtf/text/icu/UTextProviderLatin1.h>
 
 #define USE_ICU_CARET_ITERATOR (PLATFORM(MAC) && __MAC_OS_X_VERSION_MIN_REQUIRED < 101200)
 

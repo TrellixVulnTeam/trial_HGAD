@@ -8,10 +8,16 @@
 #ifndef UBRK_H
 #define UBRK_H
 
-#include "unicode/utypes.h"
-#include "unicode/uloc.h"
-#include "unicode/utext.h"
-#include "unicode/localpointer.h"
+//#include "unicode/utypes.h"
+#include "/home/c/Downloads/icu/source/common/unicode/utypes.h"
+#include "/home/c/Downloads/icu/source/common/unicode/uloc.h"
+#include "/home/c/Downloads/icu/source/common/unicode/utext.h"
+//#include "unicode/uloc.h"
+//#include "unicode/utext.h"
+//#include "/home/c/AndroidStudioProjects/MyApplication/app/Source/WTF/icu/unicode/utext.h"
+//#include "/home/c/Downloads/icu/source/common/unicode/utext.h"
+//#include "unicode/localpointer.h"
+#include "/home/c/Downloads/icu/source/common/unicode/localpointer.h"
 
 /**
  * A text-break iterator.
@@ -28,7 +34,9 @@
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/parseerr.h"
+#include "/home/c/Downloads/icu/source/common/unicode/parseerr.h"
+
+//#include "unicode/parseerr.h"
 
 /**
  * \file

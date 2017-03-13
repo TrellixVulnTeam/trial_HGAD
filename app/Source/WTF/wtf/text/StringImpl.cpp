@@ -22,7 +22,11 @@
  *
  */
 
+
+#define u_tolower U_ICU_ENTRY_POINT_RENAME(u_tolower)
 #include "config.h"
+#include "/home/c/Downloads/icu/source/common/unicode/uchar.h"
+#include "/home/c/Downloads/icu/source/common/unicode/urename.h"
 #include "StringImpl.h"
 
 #include "AtomicString.h"
@@ -37,6 +41,12 @@
 #include <wtf/unicode/CharacterNames.h>
 #include <wtf/unicode/UTF8.h>
 
+
+//#include "/home/c/Downloads/icu/source/common/unicode/CharacterNames.h"
+//#include "/home/c/Downloads/icu/source/common/unicode/UTF8.h"
+
+
+
 #if STRING_STATS
 #include <unistd.h>
 #include <wtf/DataLog.h>
@@ -45,6 +55,11 @@
 namespace WTF {
 
 using namespace Unicode;
+
+//U_STABLE UChar32 U_EXPORT2
+//u_tolower(UChar32 c);
+
+
 
 static_assert(sizeof(StringImpl) == 2 * sizeof(int) + 2 * sizeof(void*), "StringImpl should stay small");
 

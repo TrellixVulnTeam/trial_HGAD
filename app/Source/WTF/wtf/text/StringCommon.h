@@ -26,7 +26,8 @@
 #ifndef StringCommon_h
 #define StringCommon_h
 
-#include <unicode/uchar.h>
+#include "/home/c/Downloads/icu/source/common/unicode/uchar.h"
+//#include <unicode/uchar.h>
 #include <wtf/ASCIICType.h>
 
 namespace WTF {

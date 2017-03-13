@@ -23,7 +23,20 @@ endif ()
 if (NOT DEFINED ENABLE_TOOLS AND EXISTS "${CMAKE_SOURCE_DIR}/Tools")
     set(ENABLE_TOOLS ON)
 endif ()
+include_directories(${ICU_INCLUDE_DIRS})
+link_directories(${ICU_LIBRARY_DIRS})
+#add_executable(test1 src/dictionary.cpp src/main.cpp )
+#target_link_libraries(test1 ${ICU_LIBRARIES})
 
+MESSAGE("ICU_INCLUDE_DIRS: " ${ICU_INCLUDE_DIRS})
+
+#set(CMAKE_SYSTEM_NAME  Android)
+
+#set(CMAKE_SYSTEM_VERSION 1)
+
+# Compiler to build for the target
+#set(CMAKE_C_COMPILER /home/c/Documents/api24_standalone_toolchain/bin/arm-linux-androideabi-clang)
+#set(CMAKE_CXX_COMPILER /home/c/Documents/api24_standalone_toolchain/bin/arm-linux-androideabi-clang++)
 # -----------------------------------------------------------------------------
 # Determine which port will be built
 # -----------------------------------------------------------------------------
@@ -56,6 +69,9 @@ endif ()
 #if (CMAKE_COMPILER_IS_GNUCXX OR COMPILER_IS_CLANG)
 #    set(COMPILER_IS_GCC_OR_CLANG ON)
 #endif ()
+
+#include_directories(/home/c/AndroidStudioProjects/MyApplication/app/Source/JavaScriptCore/icu/)
+#include_directories(/usr/include/x86_64-linux-gnu/)
 
 #set(CMAKE_SYSROOT /home/c/Android/Sdk/ndk-bundle/sysroot)
 # -----------------------------------------------------------------------------
